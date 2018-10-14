@@ -1,0 +1,47 @@
+.slider-works {
+
+	&__next,
+	&__prev {
+		@include size(22px, 38px);
+		@include pos($t: 50%);
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+
+	&__next {
+		right: -25%;
+		background: url(../images/arrow-right.png) no-repeat;
+	}
+
+	&__prev {
+		left: -25%;
+		background: url(../images/arrow-left.png) no-repeat;
+	}
+
+	&__pages {
+		@include pos($b: -13%, $l: 50%);
+		transform: translateX(-50%);
+
+		.slick-dots {
+			display: flex;
+		}
+
+		li {
+			padding: 0 3px;
+
+			button {
+				@include size(10px);
+				background: url(../images/dot.png);
+				overflow: hidden;
+				text-indent: -30px;
+				cursor: pointer;
+			}
+
+			&.slick-active {
+				button {
+					background: url(../images/dot-active.png);
+				}
+			}
+		}
+	}
+}

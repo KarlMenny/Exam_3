@@ -1,0 +1,24 @@
+.map {
+	text-align: center;
+	padding: 55px 0;
+
+	&__item {
+		font-family: $proxima;
+		font-size: 36px;
+		text-transform: uppercase;
+		margin-bottom: 260px;
+	}
+
+	&__btn {
+		@include size(293px, 70px);
+		display: inline-block;
+		line-height: 70;
+		background: #9f9acf;
+		text-align: center;
+		font-family: $proxima;
+		font-weight: 700;
+		text-transform: uppercase;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+		cursor: pointer;
+	}
+}

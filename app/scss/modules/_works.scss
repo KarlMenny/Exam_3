@@ -1,0 +1,32 @@
+.works {
+	padding: 45px 0 60px;
+	text-align: center;
+	background: url(../images/works.jpg) no-repeat;
+	background-size: cover;
+
+	&__wrapper {
+		position: relative;
+		width: 732px;
+		display: inline-block;
+	}
+
+	&__title {
+		margin-top: 20px;
+		margin-bottom: 65px;
+		font-size: 36px;
+		font-family: $proxima;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		@include size(195px, 50px);
+		margin: 0 auto;
+		margin-top: 105px;
+		border: 1px solid $grey;
+		text-align: center;
+		line-height: 50px;
+		font-style: italic;
+		color: $grey;
+		cursor: pointer;
+	}	
+}

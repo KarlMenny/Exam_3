@@ -1,0 +1,67 @@
+.about {
+	padding: 125px 0;
+
+	&__picture {
+		padding: 75px 0 350px;
+		background: url(../images/about.jpg) no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	&__img {
+		margin-bottom: 40px;
+	}
+
+	&__description {
+		padding-top: 75px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 36px;
+		font-family: $proxima;
+	}
+
+	&__text {
+		color: $grey;
+		margin-bottom: 30px;
+
+		&--margin {
+			margin-bottom: 90px;
+		}
+	}
+
+	&__emit {
+		font-weight: 700;
+	}
+
+	&__btn {
+		@include size(195px, 50px);
+		margin: 0 auto;
+		border: 1px solid $grey;
+		text-align: center;
+		line-height: 50px;
+		font-style: italic;
+		color: $grey;
+		cursor: pointer;
+	}
+
+	@media (min-width: 768px) and (max-width: 1366px) {
+		padding: 0 0 125px;
+
+		&__picture {
+			padding: 30px 0;
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+
+		&__img {
+			margin-bottom: 20px;
+		}
+
+		&__description {
+			padding-right: 75px;
+
+		}
+	}
+}

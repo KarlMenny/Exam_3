@@ -1,0 +1,79 @@
+.services {
+
+	&__item {
+		padding: 100px 0 138px;
+		text-align: center;
+
+		&--color {
+			background: #dbdbdb;
+		}
+
+		&--picture {
+			background: url(../images/services.jpg) no-repeat;
+			background-size: cover;
+			padding-top: 135px;
+			height: 100%;
+		}
+
+		&--padding {
+			padding-bottom: 140px;
+		}
+
+
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		margin-top: 20px;
+		margin-bottom: 18px;
+
+		&--style {
+			font-family: $proxima;
+			font-size: 36px!important;
+			color: $white!important;
+			margin-bottom: 110px;
+		}
+	}
+
+	&__text {
+		font-style: italic;
+		font-size: 18px;
+		color: $grey;
+		padding: 0 25%;
+
+		&--gutters {
+			padding: 0 5%;
+			color: $white;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $grey;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	@media (min-width: 768px) and (max-width: 1366px) {
+
+		&__item {
+			padding: 38px 20px 55px;
+
+			&--padding-2 {
+				padding-bottom: 84px;
+			}
+		}
+
+		&__text {
+			padding: 0 5px;
+		}
+
+		&__title {
+
+			&--style {
+				font-size: 30px!important;
+			}
+		}
+	}
+}
